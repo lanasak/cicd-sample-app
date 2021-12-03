@@ -3,7 +3,7 @@ set -euo pipefail
 file="tempdir"
 
 if [ -f "$file" ] ; then
-    rm "$file"
+    rm -rf "$file"
 fi
 mkdir tempdir
 mkdir tempdir/templates
